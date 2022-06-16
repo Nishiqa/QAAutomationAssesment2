@@ -13,14 +13,14 @@ Git:
     git clone https://github.com/Nishiqa/QAAutomationAssesment2.git
     cd QAAutomationAssesment2
 
-## Use the login feature file
+## Run the login feature file
 
 Open a Intellij:
--- Edit the configuration
--- Click on + icon to create new configuration and select Junit
--- Browse the runner file
--- Click on apply and OK
--- Now simple click on run icon in intellij 
+-- Edit the configuration\
+-- Click on + icon to create new configuration and select Junit\
+-- Browse the runner file\
+-- Click on apply and OK\
+-- Now simple click on run icon in intellij\
 
 Please find the below screenshot for more information about Edit Configuration
 
