@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="36.50355">
+    <testcase classname="Sauce Demo login feature" name="Validate user is able to login with Valid Username &amp; Password" time="4.704353">
+        <system-out><![CDATA[Given user navigate to saucedemo application................................passed
+Then user should see login form.............................................passed
+When user enter username as "standard_user" and password as "secret_sauce"..passed
+Then User should able to enter username & password..........................passed
+When User click on login button.............................................passed
+Then User should see product home screen....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sauce Demo login feature" name="Validate user is able to login with Valid Username &amp; Password 2" time="4.459625">
+        <system-out><![CDATA[Given user navigate to saucedemo application................................passed
+Then user should see login form.............................................passed
+When user enter username as "problem_user" and password as "secret_sauce"...passed
+Then User should able to enter username & password..........................passed
+When User click on login button.............................................passed
+Then User should see product home screen....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sauce Demo login feature" name="Validate user is able to login with Valid Username &amp; Password 3" time="8.540322">
+        <system-out><![CDATA[Given user navigate to saucedemo application................................passed
+Then user should see login form.............................................passed
+When user enter username as "performance_glitch_user" and password as "secret_sauce".passed
+Then User should able to enter username & password..........................passed
+When User click on login button.............................................passed
+Then User should see product home screen....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sauce Demo login feature" name="Validate error message &quot;Username is required&quot;" time="3.554591">
+        <system-out><![CDATA[Given user navigate to saucedemo application................................passed
+Then user should see login form.............................................passed
+When user enter username as "standard_user" and password as ""..............passed
+Then User should able to enter "username"...................................passed
+When User click on login button.............................................passed
+Then User should see error message as "Epic sadface: Password is required"..passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sauce Demo login feature" name="Validate error message &quot;Password is required&quot;" time="3.528285">
+        <system-out><![CDATA[Given user navigate to saucedemo application................................passed
+Then user should see login form.............................................passed
+When user enter username as "" and password as "secret_sauce"...............passed
+Then User should able to enter "password"...................................passed
+When User click on login button.............................................passed
+Then User should see error message as "Epic sadface: Username is required"..passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sauce Demo login feature" name="Validate error message &quot;Password is required&quot; 2" time="8.27407">
+        <system-out><![CDATA[Given user navigate to saucedemo application................................passed
+Then user should see login form.............................................passed
+When user enter username as "" and password as ""...........................passed
+Then User should able to enter "password"...................................passed
+When User click on login button.............................................passed
+Then User should see error message as "Epic sadface: Username is required"..passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sauce Demo login feature" name="Validate error message &quot;Sorry, this user has been locked out.&quot;" time="3.442304">
+        <system-out><![CDATA[Given user navigate to saucedemo application................................passed
+Then user should see login form.............................................passed
+When user enter username as "locked_out_user" and password as "secret_sauce".passed
+Then User should able to enter "password"...................................passed
+When User click on login button.............................................passed
+Then User should see error message as "Epic sadface: Sorry, this user has been locked out.".passed
+]]></system-out>
+    </testcase>
+</testsuite>

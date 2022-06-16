@@ -1,0 +1,129 @@
+@LoginFeature
+Feature: Sauce Demo login feature
+
+  @validateLoginWithValidIUsers
+  Scenario Outline: Validate user is able to login with Valid Username & Password [90m# src/test/resources/features/Login.feature:8[0m
+    [36mThen user should see login form[0m
+    [36mWhen user enter username as "<username>" and password as "<password>"[0m
+    [36mThen User should able to enter username & password[0m
+    [36mWhen User click on login button[0m
+    [36mThen User should see product home screen[0m
+
+    Examples: 
+
+  Background:                                    [90m# src/test/resources/features/Login.feature:4[0m
+    [32mGiven [0m[32muser navigate to saucedemo application[0m [90m# StepDefinition.userNavigateTo()[0m
+
+  @LoginFeature @validateLoginWithValidIUsers
+  Scenario Outline: Validate user is able to login with Valid Username & Password [90m# src/test/resources/features/Login.feature:16[0m
+    [32mThen [0m[32muser should see login form[0m                                               [90m# StepDefinition.userShouldSeeLoginForm()[0m
+    [32mWhen [0m[32muser enter username as [0m[32m[1m"standard_user"[0m[32m and password as [0m[32m[1m"secret_sauce"[0m    [90m# StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)[0m
+    [32mThen [0m[32mUser should able to enter username & password[0m                            [90m# StepDefinition.userShouldAbleToEnterUsernamePassword()[0m
+    [32mWhen [0m[32mUser click on login button[0m                                               [90m# StepDefinition.userClickOnLoginButton()[0m
+    [32mThen [0m[32mUser should see product home screen[0m                                      [90m# StepDefinition.userShouldSeeProductHomeScreen()[0m
+
+  Background:                                    [90m# src/test/resources/features/Login.feature:4[0m
+    [32mGiven [0m[32muser navigate to saucedemo application[0m [90m# StepDefinition.userNavigateTo()[0m
+
+  @LoginFeature @validateLoginWithValidIUsers
+  Scenario Outline: Validate user is able to login with Valid Username & Password [90m# src/test/resources/features/Login.feature:17[0m
+    [32mThen [0m[32muser should see login form[0m                                               [90m# StepDefinition.userShouldSeeLoginForm()[0m
+    [32mWhen [0m[32muser enter username as [0m[32m[1m"problem_user"[0m[32m and password as [0m[32m[1m"secret_sauce"[0m     [90m# StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)[0m
+    [32mThen [0m[32mUser should able to enter username & password[0m                            [90m# StepDefinition.userShouldAbleToEnterUsernamePassword()[0m
+    [32mWhen [0m[32mUser click on login button[0m                                               [90m# StepDefinition.userClickOnLoginButton()[0m
+    [32mThen [0m[32mUser should see product home screen[0m                                      [90m# StepDefinition.userShouldSeeProductHomeScreen()[0m
+
+  Background:                                    [90m# src/test/resources/features/Login.feature:4[0m
+    [32mGiven [0m[32muser navigate to saucedemo application[0m [90m# StepDefinition.userNavigateTo()[0m
+
+  @LoginFeature @validateLoginWithValidIUsers
+  Scenario Outline: Validate user is able to login with Valid Username & Password        [90m# src/test/resources/features/Login.feature:18[0m
+    [32mThen [0m[32muser should see login form[0m                                                      [90m# StepDefinition.userShouldSeeLoginForm()[0m
+    [32mWhen [0m[32muser enter username as [0m[32m[1m"performance_glitch_user"[0m[32m and password as [0m[32m[1m"secret_sauce"[0m [90m# StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)[0m
+    [32mThen [0m[32mUser should able to enter username & password[0m                                   [90m# StepDefinition.userShouldAbleToEnterUsernamePassword()[0m
+    [32mWhen [0m[32mUser click on login button[0m                                                      [90m# StepDefinition.userClickOnLoginButton()[0m
+    [32mThen [0m[32mUser should see product home screen[0m                                             [90m# StepDefinition.userShouldSeeProductHomeScreen()[0m
+
+  @validateErrorMessageUsername
+  Scenario Outline: Validate error message "Username is required" [90m# src/test/resources/features/Login.feature:21[0m
+    [36mThen user should see login form[0m
+    [36mWhen user enter username as "<username>" and password as "<password>"[0m
+    [36mThen User should able to enter "username"[0m
+    [36mWhen User click on login button[0m
+    [36mThen User should see error message as "<errorMessage>"[0m
+
+    Examples: 
+
+  Background:                                    [90m# src/test/resources/features/Login.feature:4[0m
+    [32mGiven [0m[32muser navigate to saucedemo application[0m [90m# StepDefinition.userNavigateTo()[0m
+
+  @LoginFeature @validateErrorMessageUsername
+  Scenario Outline: Validate error message "Username is required"              [90m# src/test/resources/features/Login.feature:29[0m
+    [32mThen [0m[32muser should see login form[0m                                            [90m# StepDefinition.userShouldSeeLoginForm()[0m
+    [32mWhen [0m[32muser enter username as [0m[32m[1m"standard_user"[0m[32m and password as [0m[32m[1m""[0m             [90m# StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)[0m
+    [32mThen [0m[32mUser should able to enter [0m[32m[1m"username"[0m                                  [90m# StepDefinition.userShouldAbleToEnter(String)[0m
+    [32mWhen [0m[32mUser click on login button[0m                                            [90m# StepDefinition.userClickOnLoginButton()[0m
+    [32mThen [0m[32mUser should see error message as [0m[32m[1m"Epic sadface: Password is required"[0m [90m# StepDefinition.userShouldSeeErrorMessageAs(String)[0m
+
+  @validateErrorMessagePassword
+  Scenario Outline: Validate error message "Password is required" [90m# src/test/resources/features/Login.feature:32[0m
+    [36mThen user should see login form[0m
+    [36mWhen user enter username as "<username>" and password as "<password>"[0m
+    [36mThen User should able to enter "password"[0m
+    [36mWhen User click on login button[0m
+    [36mThen User should see error message as "<errorMessage>"[0m
+
+    Examples: 
+
+  Background:                                    [90m# src/test/resources/features/Login.feature:4[0m
+    [32mGiven [0m[32muser navigate to saucedemo application[0m [90m# StepDefinition.userNavigateTo()[0m
+
+  @LoginFeature @validateErrorMessagePassword
+  Scenario Outline: Validate error message "Password is required"              [90m# src/test/resources/features/Login.feature:40[0m
+    [32mThen [0m[32muser should see login form[0m                                            [90m# StepDefinition.userShouldSeeLoginForm()[0m
+    [32mWhen [0m[32muser enter username as [0m[32m[1m""[0m[32m and password as [0m[32m[1m"secret_sauce"[0m              [90m# StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)[0m
+    [32mThen [0m[32mUser should able to enter [0m[32m[1m"password"[0m                                  [90m# StepDefinition.userShouldAbleToEnter(String)[0m
+    [32mWhen [0m[32mUser click on login button[0m                                            [90m# StepDefinition.userClickOnLoginButton()[0m
+    [32mThen [0m[32mUser should see error message as [0m[32m[1m"Epic sadface: Username is required"[0m [90m# StepDefinition.userShouldSeeErrorMessageAs(String)[0m
+
+  @validateErrorMessageUsernamePassword
+  Scenario Outline: Validate error message "Password is required" [90m# src/test/resources/features/Login.feature:43[0m
+    [36mThen user should see login form[0m
+    [36mWhen user enter username as "<username>" and password as "<password>"[0m
+    [36mThen User should able to enter "password"[0m
+    [36mWhen User click on login button[0m
+    [36mThen User should see error message as "<errorMessage>"[0m
+
+    Examples: 
+
+  Background:                                    [90m# src/test/resources/features/Login.feature:4[0m
+    [32mGiven [0m[32muser navigate to saucedemo application[0m [90m# StepDefinition.userNavigateTo()[0m
+
+  @LoginFeature @validateErrorMessageUsernamePassword
+  Scenario Outline: Validate error message "Password is required"              [90m# src/test/resources/features/Login.feature:51[0m
+    [32mThen [0m[32muser should see login form[0m                                            [90m# StepDefinition.userShouldSeeLoginForm()[0m
+    [32mWhen [0m[32muser enter username as [0m[32m[1m""[0m[32m and password as [0m[32m[1m""[0m                          [90m# StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)[0m
+    [32mThen [0m[32mUser should able to enter [0m[32m[1m"password"[0m                                  [90m# StepDefinition.userShouldAbleToEnter(String)[0m
+    [32mWhen [0m[32mUser click on login button[0m                                            [90m# StepDefinition.userClickOnLoginButton()[0m
+    [32mThen [0m[32mUser should see error message as [0m[32m[1m"Epic sadface: Username is required"[0m [90m# StepDefinition.userShouldSeeErrorMessageAs(String)[0m
+
+  @validateErrorMessageUserLocked
+  Scenario Outline: Validate error message "Sorry, this user has been locked out." [90m# src/test/resources/features/Login.feature:54[0m
+    [36mThen user should see login form[0m
+    [36mWhen user enter username as "<username>" and password as "<password>"[0m
+    [36mThen User should able to enter "password"[0m
+    [36mWhen User click on login button[0m
+    [36mThen User should see error message as "<errorMessage>"[0m
+
+    Examples: 
+
+  Background:                                    [90m# src/test/resources/features/Login.feature:4[0m
+    [32mGiven [0m[32muser navigate to saucedemo application[0m [90m# StepDefinition.userNavigateTo()[0m
+
+  @LoginFeature @validateErrorMessageUserLocked
+  Scenario Outline: Validate error message "Sorry, this user has been locked out."              [90m# src/test/resources/features/Login.feature:62[0m
+    [32mThen [0m[32muser should see login form[0m                                                             [90m# StepDefinition.userShouldSeeLoginForm()[0m
+    [32mWhen [0m[32muser enter username as [0m[32m[1m"locked_out_user"[0m[32m and password as [0m[32m[1m"secret_sauce"[0m                [90m# StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)[0m
+    [32mThen [0m[32mUser should able to enter [0m[32m[1m"password"[0m                                                   [90m# StepDefinition.userShouldAbleToEnter(String)[0m
+    [32mWhen [0m[32mUser click on login button[0m                                                             [90m# StepDefinition.userClickOnLoginButton()[0m
+    [32mThen [0m[32mUser should see error message as [0m[32m[1m"Epic sadface: Sorry, this user has been locked out."[0m [90m# StepDefinition.userShouldSeeErrorMessageAs(String)[0m

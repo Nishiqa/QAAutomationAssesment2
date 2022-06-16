@@ -1,0 +1,994 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1699876900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to saucedemo application",
+            "match": {
+              "location": "StepDefinition.userNavigateTo()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-16T02:54:40.364Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1781353300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Validate user is able to login with Valid Username \u0026 Password",
+        "description": "",
+        "id": "sauce-demo-login-feature;validate-user-is-able-to-login-with-valid-username-\u0026-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 530786000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 145888700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should see login form",
+            "match": {
+              "location": "StepDefinition.userShouldSeeLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 184767700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enter username as \"standard_user\" and password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 55
+                }
+              ],
+              "location": "StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43921300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should able to enter username \u0026 password",
+            "match": {
+              "location": "StepDefinition.userShouldAbleToEnterUsernamePassword()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 117066700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on login button",
+            "match": {
+              "location": "StepDefinition.userClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44250200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should see product home screen",
+            "match": {
+              "location": "StepDefinition.userShouldSeeProductHomeScreen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@validateLoginWithValidIUsers"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1617628300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to saucedemo application",
+            "match": {
+              "location": "StepDefinition.userNavigateTo()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-16T02:54:45.075Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2110755300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Validate user is able to login with Valid Username \u0026 Password",
+        "description": "",
+        "id": "sauce-demo-login-feature;validate-user-is-able-to-login-with-valid-username-\u0026-password;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 220890900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 112301600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should see login form",
+            "match": {
+              "location": "StepDefinition.userShouldSeeLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 192496000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enter username as \"problem_user\" and password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"problem_user\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 54
+                }
+              ],
+              "location": "StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42873600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should able to enter username \u0026 password",
+            "match": {
+              "location": "StepDefinition.userShouldAbleToEnterUsernamePassword()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 111368900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on login button",
+            "match": {
+              "location": "StepDefinition.userClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42426000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should see product home screen",
+            "match": {
+              "location": "StepDefinition.userShouldSeeProductHomeScreen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@validateLoginWithValidIUsers"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1433669200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to saucedemo application",
+            "match": {
+              "location": "StepDefinition.userNavigateTo()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-16T02:54:49.538Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1320044600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Validate user is able to login with Valid Username \u0026 Password",
+        "description": "",
+        "id": "sauce-demo-login-feature;validate-user-is-able-to-login-with-valid-username-\u0026-password;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 206909400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 106305900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should see login form",
+            "match": {
+              "location": "StepDefinition.userShouldSeeLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 205193700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enter username as \"performance_glitch_user\" and password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"performance_glitch_user\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 65
+                }
+              ],
+              "location": "StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46502700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should able to enter username \u0026 password",
+            "match": {
+              "location": "StepDefinition.userShouldAbleToEnterUsernamePassword()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5143875600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on login button",
+            "match": {
+              "location": "StepDefinition.userClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67903400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should see product home screen",
+            "match": {
+              "location": "StepDefinition.userShouldSeeProductHomeScreen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@validateLoginWithValidIUsers"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1630815600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to saucedemo application",
+            "match": {
+              "location": "StepDefinition.userNavigateTo()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-16T02:54:58.079Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1373868500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Validate error message \"Username is required\"",
+        "description": "",
+        "id": "sauce-demo-login-feature;validate-error-message-\"username-is-required\";;2",
+        "after": [
+          {
+            "result": {
+              "duration": 130980500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 106535800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should see login form",
+            "match": {
+              "location": "StepDefinition.userShouldSeeLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 172420500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user enter username as \"standard_user\" and password as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 55
+                }
+              ],
+              "location": "StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19188800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User should able to enter \"username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefinition.userShouldAbleToEnter(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78777000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User click on login button",
+            "match": {
+              "location": "StepDefinition.userClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30860000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User should see error message as \"Epic sadface: Password is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Password is required\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.userShouldSeeErrorMessageAs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@validateErrorMessageUsername"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1701271600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to saucedemo application",
+            "match": {
+              "location": "StepDefinition.userNavigateTo()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-16T02:55:01.636Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1235672800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.setUp()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Validate error message \"Password is required\"",
+        "description": "",
+        "id": "sauce-demo-login-feature;validate-error-message-\"password-is-required\";;2",
+        "after": [
+          {
+            "result": {
+              "duration": 185398400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 110725500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user should see login form",
+            "match": {
+              "location": "StepDefinition.userShouldSeeLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 155178300,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user enter username as \"\" and password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19518000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User should able to enter \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefinition.userShouldAbleToEnter(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 81381500,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User click on login button",
+            "match": {
+              "location": "StepDefinition.userClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28105400,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User should see error message as \"Epic sadface: Username is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username is required\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.userShouldSeeErrorMessageAs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@validateErrorMessagePassword"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1639296200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to saucedemo application",
+            "match": {
+              "location": "StepDefinition.userNavigateTo()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-16T02:55:05.166Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1405063300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.setUp()"
+            }
+          }
+        ],
+        "line": 51,
+        "name": "Validate error message \"Password is required\"",
+        "description": "",
+        "id": "sauce-demo-login-feature;validate-error-message-\"password-is-required\";;2",
+        "after": [
+          {
+            "result": {
+              "duration": 4866864600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 105808000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user should see login form",
+            "match": {
+              "location": "StepDefinition.userShouldSeeLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 111448600,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user enter username as \"\" and password as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23117100,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User should able to enter \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefinition.userShouldAbleToEnter(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 84274700,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User click on login button",
+            "match": {
+              "location": "StepDefinition.userClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28514000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User should see error message as \"Epic sadface: Username is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username is required\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.userShouldSeeErrorMessageAs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@validateErrorMessageUsernamePassword"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1621489700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to saucedemo application",
+            "match": {
+              "location": "StepDefinition.userNavigateTo()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-16T02:55:13.441Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1177383000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.setUp()"
+            }
+          }
+        ],
+        "line": 62,
+        "name": "Validate error message \"Sorry, this user has been locked out.\"",
+        "description": "",
+        "id": "sauce-demo-login-feature;validate-error-message-\"sorry--this-user-has-been-locked-out.\";;2",
+        "after": [
+          {
+            "result": {
+              "duration": 179821600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 118083200,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "user should see login form",
+            "match": {
+              "location": "StepDefinition.userShouldSeeLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 213200600,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user enter username as \"locked_out_user\" and password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"locked_out_user\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinition.userEnterUsernameAsAndPasswordAs(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17902500,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "User should able to enter \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefinition.userShouldAbleToEnter(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 72553000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User click on login button",
+            "match": {
+              "location": "StepDefinition.userClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31970800,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "User should see error message as \"Epic sadface: Sorry, this user has been locked out.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Sorry, this user has been locked out.\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.userShouldSeeErrorMessageAs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@validateErrorMessageUserLocked"
+          }
+        ]
+      }
+    ],
+    "name": "Sauce Demo login feature",
+    "description": "",
+    "id": "sauce-demo-login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@LoginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
