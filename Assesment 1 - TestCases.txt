@@ -1,0 +1,60 @@
+Test Case 1: Validate user is able to login with Valid Username & Password
+- User navigates to https://www.saucedemo.com/                         - Login form should get displayed
+- User enter the valid username & password                             - User should able to enter username & password`
+- User click on login button	                                         - User should see product home screen
+
+Test Data: 
+standard_user/secret_sauce
+problem_user/secret_sauce
+performance_glitch_user/secret_sauce
+
+Test Case 2: Validate error message "Username is required"
+- User navigates to https://www.saucedemo.com/                         - Login form should get displayed
+- User enter password and keep username blank 					    - User should able to enter password`
+- User click on login button									    - User should see Error message "Username is required"
+
+Test Case 3: Validate error message "Password is required"
+- User navigates to https://www.saucedemo.com/                         - Login form should get displayed
+- User enter username and keep password blank 					    - User should able to enter username
+- User click on login button									    - User should see Error message "Password is required"
+
+Test Case 4: Validate error message "username is required"
+- User navigates to https://www.saucedemo.com/                         - Login form should get displayed
+- Keep username and password fields blank 						    - User should able to enter username & password
+- User click on login button									    - User should see Error message "username is required"
+
+Test Case 5: Validate error message "Sorry, this user has been locked out."
+- User navigates to https://www.saucedemo.com/                         - Login form should get displayed
+- Keep username as "locked_out_user" and password as "secret_sauce" fields blank 	 - User should able to enter username & password
+- User click on login button									    - User should see Error message "Sorry, this user has been locked out."
+
+Test Data: 
+locked_out_user/secret_sauce
+
+Test Case 6: Validate if user is not able to login with invalid credentials
+- User navigates to https://www.saucedemo.com/                         - Login form should get displayed
+- User enter the invalid username & password                            - User should able to enter username & password`
+- User click on login button	                                         - User should get error message "Username and password do not match any user in this service"
+
+Test Case 7: Validate user if password field is masked
+- User navigates to https://www.saucedemo.com/                         - Login form should get displayed
+- User enter the valid username & password                             - User should able to enter username & password and verify password filed is masked\
+
+
+Test Case 8: Check login with Enter key is working
+- User navigates to https://www.saucedemo.com/                         - Login form should get displayed
+- User enter the valid username & password                             - User should able to enter username & password`
+- User press enter key   	                                             - User should see product home screen
+
+
+Test Case 9: Verify the error message backgroud color
+- User navigates to https://www.saucedemo.com/                         - Login form should get displayed
+- User enter the invalid username & password                           - User should able to enter username & password`
+- User click on login button	  	                                    - Verify the error message background should be in red color
+
+
+
+
+
+
+
