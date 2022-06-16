@@ -6,6 +6,11 @@ This is the Sample Selenium cucumber project.
 
 There is a single feature file with five scenario. 
 
+## Software required
+1. Intellij IDE
+2. JDK 17
+3. Git
+
 ## Get the code
 
 Git:
